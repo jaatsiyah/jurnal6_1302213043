@@ -3,7 +3,7 @@
 public class SayaTubeVideo
 {
 	private int id;
-	private string title;
+	public string title;
 	private int playCount;
 	public SayaTubeVideo(string title)
 	{
@@ -21,9 +21,15 @@ public class SayaTubeVideo
 	public void PrintVideoDetails()
 	{
 		Console.WriteLine("Details Video : ");
-		Console.WriteLine("ID : ", id);
-		Console.WriteLine("Title : ", title);
-		Console.WriteLine("Play Count : ", playCount);
+		Console.WriteLine("ID : "+ id);
+		Console.WriteLine("Title : "+ title);
+		Console.WriteLine("Play Count : " + playCount);
+		Console.WriteLine();
 
     }
+
+	public int GetPlayCount()
+	{
+		return playCount;
+	}
 }
